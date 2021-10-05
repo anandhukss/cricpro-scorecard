@@ -1,16 +1,173 @@
 /* Type your code here */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.player {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    z-index: 3;
+    /* background: url('assets/gambhir.png'); */
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 400px;
+    display: none;
+}
+
+body {
+    background: url('./assets/background-image1.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.main-heading {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+
+.logo {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.main-heading h1 {
+    font-size: 40px;
+}
+
+.main-heading h2 {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.score-card {
+    background-color: white;
+    height: 70vh;
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    width: 60%;
+}
+
+.table-heading {
+    background-color: orangered;
+    color: white;
+    padding: 8px 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.score-head {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.score-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.small {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.runs {
+    width: 50px;
+    text-align: center;
+}
+
+.batsman {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(17, 179, 233);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.out-details {
+    text-align: left;
+    width: 200px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.extras {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.extra-runs {
+    width: 30%;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.yet-to-bat {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.batsman-names {
+    width: 65%;
+    text-align: left;
+}
+
 
 /* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
+
+.footer {
+    display: flex;
     flex-direction: row;
     align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
+    position: relative;
+    top: 700px;
+    margin-left: 80px;
+    font-size: 18px;
+    font-family: Nunito Sans;
     font-style: normal;
-    
 }
